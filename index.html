@@ -1,0 +1,274 @@
+<!--Src of video: https://www.youtube.com/watch?v=dW0vY5vvU1U-->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!--Bootsrap Src:https://cdnjs.com/libraries/twitter-bootstrap/4.5.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"/>
+    <!--React CDNs: https://reactjs.org/docs/cdn-links.html-->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!--Babel CDNs: https://babeljs.io/setup#installation-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!--Marked CDN: https://cdnjs.com/libraries/marked/1.1.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
+    <title>React Markeddown Previewer</title>
+</head>
+<body>
+<!--
+<p id="savedText"></p>
+-->
+
+
+
+<!--Layout - Source:https://www.w3schools.com/howto/howto_css_two_columns.asp-->
+
+<h1 style="color:white; text-align:center;">New to Coding? Let's Learn the Basics!</h1>
+
+
+
+<h2 style="color: white;position:relative;top:25px;right:-420px; font-family: Times New Roman, Times, serif;">Editor</h2>
+
+
+<h2 style="color:white; position:relative;top:-20px; right: -1350px; font-family: Times New Roman, Times, serif;">Previewer</h2>
+
+
+<div id="root"></div>
+<script type="text/babel" src="./index.js"></script> <!--React-->
+
+<!--RESET BTN - Clear btn
+  https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_form_reset
+Src: https://stackoverflow.com/questions/43439475/creating-a-clear-button-using-javascript-and-html/43439585#43439585-->
+
+<input type="button" id="resetbtn" value="Reset" onclick="resethere()">
+<!---
+<input type="button" id="reset-btn" onclick="myFunction()" value="Reset-btn">
+->
+
+
+<!-FOOTER-->
+<div style="color: white;" class="footer">
+<footer>By: Mssamcodes</footer>
+</div>
+
+
+
+<!--To SAVE data. Src: https://www.youtube.com/watch?v=6R9SaZdyaVU-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--Editor code Backup:
+
+<br>
+<h2 style="color: white; border: 1px solid; width: 910px; text-align: center; background-color: rgb(75,0,130)">HTML</h2>
+
+<br>
+
+<h3>Gifs</h3>
+
+<br>
+
+```<img src="https://media.giphy.com/media/naLwKMEEeQ1Ik/giphy.gif" alt="Nene Leaks - Boop" style="width:50%;"  />```
+
+<img src="https://media.giphy.com/media/naLwKMEEeQ1Ik/giphy.gif" alt="Nene Leaks - Boop" style="width:50%;"  />
+
+<br>
+<br>
+
+<h3>Images</h3>
+
+<br>
+
+```<img src="pics/pic1.jpg" alt="description of gif" style="width:50%;" /> ```
+
+<img src="pics/pic1.jpg" alt="description of gif" style="width:50%;" /> 
+
+<br>
+<br>
+
+<h3>Links</h3>
+
+The link below will change the current browser you are in.
+
+```<p><a href="https://www.freecodecamp.org">Learn how to code for free on Freecodecamp.org!</a></p>```
+
+<p><a href="https://www.freecodecamp.org">Learn how to code for free on Freecodecamp.org!</a></p>
+
+
+The link below will open up a to a new browser.
+```<a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools is a great source for beginners!</a> ```
+
+<a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools is a great source for beginners!</a> 
+<br>
+
+<h3>Ordered List</h3>
+
+```<ul>```
+```<li>Turkey</li>```
+ ``` <li>Gravy</li>```
+ ``` <li>Mash Potatoes</li>```
+  ```<li>Green Bean Cassarole</li>```
+ ``` <li>Ham</li>```
+```</ul>```
+
+<ul>
+  <li>Turkey</li>
+  <li>Gravy</li>
+  <li>Mash Potatoes</li>
+  <li>Green Bean Cassarole</li>
+  <li>Ham</li>
+</ul>
+
+<br>
+
+<h3>Unordered List</h3>
+
+```<ol>```
+ ``` <li>Pecan Pie</li>```
+ ``` <li>Potato Salad</li>```
+ ``` <li>Candid Yams</li>```
+```  <li>Stuffing</li>```
+ ``` <li>Cauliflower Casserole</li>```
+```</ol>```
+
+<ol>
+  <li>Pecan Pie</li>
+  <li>Potato Salad</li>
+  <li>Candid Yams</li>
+  <li>Stuffing</li>
+  <li>Cauliflower Cassarole</li>
+</ol>
+
+<br>
+
+
+
+<h2 style="color: white; border: 1px solid; width: 910px; text-align: center; background-color: rgb(75,0,130)">CSS</h2>
+
+<br>
+
+<h3>Font Color</h3>
+
+```<p style="color:yellow;">This font color is yellow</p>```
+
+<p style="color:yellow;">This font color is yellow</p>
+
+<h3>Font Size</h3>
+
+```<p style="font-size: 50px;">I love coding!</p>```
+
+<p style="font-size: 50px;">I love coding!</p>
+
+<h3>Border & Box</h3>
+
+```<p  style="font-size: 50px; background-color: pink; border: solid 5px; width: 168px;">Border</p>```
+
+<p  style="font-size: 50px; background-color: pink; border: solid 5px; width: 168px;">Border</p>
+
+<h3>Hover</h3>
+
+```<style>```
+```.text4:hover {background-color: pink; cursor: pointer; width: 270px;}```
+```</style>```
+```<p style="font-size: 20px" class="text4">Hey, hover your mouse over me!"</p>```
+
+<p style="font-size: 20px" class="text4">Hey, hover your mouse over me!"</p>
+<style>
+.text4:hover {background-color: pink; cursor: pointer; width: 330px;}
+</style>
+
+<br>
+
+<h2 style="color: white; border: 1px solid; width: 910px; text-align: center; background-color: rgb(75,0,130)">JavaScript</h2>
+
+<br>
+
+<h3>Onclick</h3>
+
+```<button style="background-color: white;"```
+```onclick="getElementById('time-date').innerHTML=Date()">```
+```Click Here for the Time & Date</button>```
+```<p id="time-date"></p>```
+
+<button style="background-color: white;" onclick="getElementById('time-date').innerHTML=Date()">Click Here for the Current Time & Date</button>
+<p id="time-date"></p>
+
+<br>
+<h3>Onclick Alerts</h2>
+
+Referencing back to  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert2" target="_blank">W3Schools</a>, below is how you can line breaks into your alert popup box.
+
+```<button style="width: 100px; height: 40px; background-color: white;" onclick="alert('Hey, this is an alert box!\nWhat are alert boxes commonly used for? \nThey are commonly used to give warning messages.\n')">Click Me!</button>```
+
+<button style="width: 100px; height: 40px; background-color: white;" onclick="alert('Hey, this is an alert box!\nWhat are alert boxes commonly used for? \nThey are commonly used to give warning messages.\n')">Click Me!</button>
+
+<h3>Variables</h3>
+
+According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">if condition</a>, I found from 
+
+HINT: See below on how these variables can be added.
+1. Right click your mouse.
+2. Click inspect element.
+3. Click the Const tab.
+4. In the form below, copy and paste the code below to obtain the answer!
+
+```<script>```
+```var apples = 10;```
+```var oranges = 20;```
+```var bananas = 5;```
+```var total = apples + bananas + oranges;```
+```document.getElementById("fruits").innerHTML =```
+```"Your total is equaled to: " + total;```
+```</script>```
+```<p id="fruits"></p>```
+```Answer: Your total is equaled to 35```
+
+<script>
+var apples = 10;
+var oranges = 20;
+var bananas = 5;
+var total = apples + bananas + oranges;
+document.getElementById("fruits").innerHTML =
+"Your total is equaled to: " + total;
+</script>
+<p id="fruits"></p>
+
+
+<h3>If Conditions</h3>
+
+Referencing to the if condition from <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert2" target="_blank">MDN Web Docs</a>, I created a problem about my alarm clock.
+
+My ideal time to wakeup is 5am but if my alarm time rings at 7am or a great time, that is going to be a bad...day. 
+
+How to obtain this answer:
+
+1. Right click your mouse.
+2. Click inspect element.
+3. Click the Const tab.
+4. In the form below, copy and paste the code below to obtain the answer!
+
+```<script>```
+```var time = 5;```
+```var alarm = (time >=7) ? "good" : "bad";```
+```console.log(alarm); // "good-day"```
+</script>
+
+<script>
+var time = 5;
+var alarm = (time >=7) ? "good" : "bad";
+console.log(alarm); // "good-day"
+</script>
+
+-->

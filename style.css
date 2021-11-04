@@ -1,0 +1,83 @@
+*{
+margin: 0;
+
+}
+
+html,body{
+
+    background-color: rgb(75,0,130) !important;
+    color: grey;
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.textarea{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    height: 800px;
+    position: relative;
+    font-size:22px;
+    border: 0px 20px;
+    outline: none;
+    border-radius: 20px 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#preview {
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(165, 165, 236);
+    color: rgb(85, 85, 206);
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 20px 20px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Not working */
+#preview code {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#preview pre {
+    background-color: #fff;
+    padding: 10px
+}
+
+/*Clear-btn */
+.markeddown-text{
+position: relative;
+top: 730px;
+right:920px;
+}
+
+.footer{
+position: relative;
+top: 3400px;
+font-size: 20px;
+}
+
+#resetbtn{
+position:relative;
+right: -20px;
+top: 20px;
+
+}
+
+
+/* use ``` to create a background color of white in the previewer.
+for example: '''hug''' 
+*/ 
+
+
